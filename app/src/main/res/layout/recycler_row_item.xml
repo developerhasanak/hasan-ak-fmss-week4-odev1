@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.hasan.retrofitapp.model.Model" />
+
+        <variable
+            name="clickListener"
+            type="com.hasan.retrofitapp.adapter.RecyclerItemClickListener" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="155dp"
+        android:layout_height="166dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:onClick="@{clickListener::onRecyclerItemClick}"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fieldUudi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{String.valueOf(model.id)}"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/itemRowImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:downloadUrl="@{model.img_src}">
+
+
+            </ImageView>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</layout>
