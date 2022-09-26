@@ -1,6 +1,14 @@
 ## MARS REAl ASTATE APP
 
-<img src ="https://github.com/FMSSBilisimAndroid/hasan-ak-week4-odev/blob/master/app/src/main/res/drawable/app.gif" width = 300 height = 500/>
+
+
+
+https://user-images.githubusercontent.com/96025300/192383547-589d1855-b626-4472-ad27-cffefddc6548.mp4
+
+
+
+
+
 
 ## Technologies
 * MVVM
